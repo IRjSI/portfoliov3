@@ -1,42 +1,51 @@
 import { GithubIcon, PlusCircle, TwitterIcon } from "lucide-react"
 import { Link } from "react-router-dom"
 
-const Card = ({title, status, heading, description, btn1, btn2, btn3, img}: any) => {
+const Card = ({ title, status, heading, description, btn1, img }: any) => {
   return (
     <div className="p-6 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md shadow-sm">
+      <div className="flex flex-wrap justify-between items-center mb-6">
+        <p className="text-[#a1a1a1] font-medium">● {title}</p>
+        <p className="text-green-500 bg-green-500/20 px-2 py-1 rounded-lg text-sm mt-2 sm:mt-0">• {status}</p>
+      </div>
 
-        <div className="flex justify-between items-center mb-8">
+      <div className="flex flex-col-reverse md:grid md:grid-cols-[2fr_1fr] gap-6 items-center">
+        <div>
+          <h1 className="text-3xl font-semibold mb-2">{heading}</h1>
+          <p className="text-[#a1a1a1] mb-4 text-sm sm:text-base">{description}</p>
 
-            <p className="text-[#a1a1a1] font-medium">● {title}</p>
-            <p className="text-green-500 bg-green-500/20 px-2 rounded-lg">• {status}</p>
-
-        </div>    
-
-        <div className="grid grid-cols-[2fr_1fr] gap-4 justify-between mb-8">
-
-            <div>
-                
-                <h1 className="text-3xl font-semibold mb-2">{heading}</h1>
-                <p className="text-[#a1a1a1] mb-2">{description}</p>
-
-                <div className="flex justify-start items-center gap-2">
-
-                    <Link to={'/contact'} className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><PlusCircle size={12} /> {btn1}</Link>
-                    <p className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><TwitterIcon size={12} /> {btn2}</p>
-                    <p className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><GithubIcon size={12} /> {btn3}</p>
-
-                </div>
-
-            </div>
-
-            <div>
-
-                <img src={img} className="rounded-full w-36 h-36 object-cover border-2" alt="img" />
-
-            </div>
-
+          <div className="flex flex-wrap gap-2">
+            <Link
+              to={"/contact"}
+              className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-3 py-2 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232] text-sm"
+            >
+              <PlusCircle size={14} /> {btn1}
+            </Link>
+            <a
+              href="https://x.com/_RjS_0"
+              target="_blank"
+              className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-3 py-2 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"
+            >
+              <TwitterIcon size={18} />
+            </a>
+            <a
+              href="https://github.com/IRjSI"
+              target="_blank"
+              className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-3 py-2 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"
+            >
+              <GithubIcon size={18} />
+            </a>
+          </div>
         </div>
 
+        <div>
+          <img
+            src={img}
+            className="rounded-full w-32 h-32 md:w-36 md:h-36 object-cover border-2 mx-auto"
+            alt="Profile"
+          />
+        </div>
+      </div>
     </div>
   )
 }

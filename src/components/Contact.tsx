@@ -44,11 +44,11 @@ const Contact = () => {
           </button>
         </form>
 
-        <div className="flex flex-col justify-center items-center h-full mt-8">
+        <div className="flex flex-col justify-center items-center h-full mt-4">
             <p>Follow me:</p>
             <div className="flex gap-4 mt-4 font-light">
-            <p className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><TwitterIcon size={20} /></p>
-            <p className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><GithubIcon size={20} /></p>
+            <a href="https://x.com/_RjS_0" target="_blank" className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-2 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><TwitterIcon size={18} /></a>
+            <a href="https://github.com/IRjSI" target="_blank" className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-2 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><GithubIcon size={18} /></a>
             </div>
         </div>
       </div>

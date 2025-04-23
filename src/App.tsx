@@ -9,9 +9,8 @@ import Contact from "./components/Contact"
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="grid grid-cols-[3fr_4fr_3fr] p-4">
-        <div></div>
-        <div>
+      <div className="px-4 py-6">
+        <div className="max-w-[600px] mx-auto">
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -20,7 +19,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-        <div></div>
       </div>
     </ThemeProvider>
   )

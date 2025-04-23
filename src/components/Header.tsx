@@ -4,6 +4,7 @@ import { ModeToggle } from "./mode-toggle"
 import { Link, NavLink } from "react-router-dom"
 
 interface menuInt { 
+    name: string,
     logo: ReactElement,
     link: string
 }
@@ -11,27 +12,31 @@ interface menuInt {
 const Header = () => {
     const menu: menuInt[] = [
         {
+            name: "Home",
             logo: <HomeIcon size={18} />,
             link: '/'
         },
         {
+            name: "Skills",
             logo: <PenIcon size={18} />,
             link: '/skills'
         },
         {
+            name: "Projects",
             logo: <Sparkle size={18} />,
             link: '/projects'
         },
         {
+            name: "Contact",
             logo: <Contact size={18} />,
             link: '/contact'
         }
     ]
   return (
     <div className="flex gap-2 items-center justify-between px-4 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md mb-4 shadow-sm">
-        <div className="flex gap-8 items-center justify-center">
+        <div className="flex sm:gap-8 gap-4 items-center justify-center">
             {menu.map((item,ind) => (
-                <div key={ind}>
+                <div key={ind} title={item.name}>
                     <NavLink to={item.link} className="text-[#989898] transition-all px-2 rounded-full cursor-pointer">{item.logo}</NavLink>
                 </div>
             ))}
