@@ -1,7 +1,7 @@
 import { Contact, HomeIcon, PenIcon, PlusCircle, Sparkle } from "lucide-react"
 import { ReactElement } from "react"
 import { ModeToggle } from "./mode-toggle"
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 interface menuInt { 
     logo: ReactElement,
@@ -38,7 +38,7 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-2">
             <ModeToggle />
-            <p className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><PlusCircle size={12} /> Hire me</p>
+            <Link to={'/contact'} className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><PlusCircle size={12} /> Hire me</Link>
         </div>
     </div>
   )

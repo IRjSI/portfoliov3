@@ -11,7 +11,7 @@ const skills = [
   
   const Skills = () => {
     return (
-      <div className="p-6 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md h-full shadow-sm">
+      <div className="p-6 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md shadow-sm">
         <div className="flex justify-between items-center mb-6">
           <p className="text-[#a1a1a1] font-medium">● Skills</p>
         </div>
@@ -20,9 +20,9 @@ const skills = [
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center gap-2 text-sm text-white px-3 py-4 dark:bg-[#2c2c2c] rounded-md text-center dark:hover:bg-[#3a3a3a] transition-colors duration-300 bg-[#f4f4f5]"
+              className="flex flex-col items-center gap-2 text-sm px-3 py-4 dark:bg-[#2c2c2c] rounded-md text-center dark:hover:bg-[#3a3a3a] transition-colors duration-300 bg-[#f4f4f5]"
             >
-              <img src={skill.icon} alt={skill.name} className="w-8 h-8 object-contain" />
+              <img src={skill.icon} alt={skill.name} className="w-8 h-8 object-contain dark:invert-0 invert" />
               <div>{skill.name}</div>
             </div>
           ))}

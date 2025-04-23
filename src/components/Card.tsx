@@ -1,8 +1,9 @@
-import { Copy, PlusCircle } from "lucide-react"
+import { GithubIcon, PlusCircle, TwitterIcon } from "lucide-react"
+import { Link } from "react-router-dom"
 
-const Card = ({title, status, heading, description, btn1, btn2, img}: any) => {
+const Card = ({title, status, heading, description, btn1, btn2, btn3, img}: any) => {
   return (
-    <div className="p-6 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md h-full shadow-sm">
+    <div className="p-6 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md shadow-sm">
 
         <div className="flex justify-between items-center mb-8">
 
@@ -20,8 +21,9 @@ const Card = ({title, status, heading, description, btn1, btn2, img}: any) => {
 
                 <div className="flex justify-start items-center gap-2">
 
-                    <p className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><PlusCircle size={12} /> {btn1}</p>
-                    <p className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><Copy size={12} /> {btn2}</p>
+                    <Link to={'/contact'} className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><PlusCircle size={12} /> {btn1}</Link>
+                    <p className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><TwitterIcon size={12} /> {btn2}</p>
+                    <p className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><GithubIcon size={12} /> {btn3}</p>
 
                 </div>
 
