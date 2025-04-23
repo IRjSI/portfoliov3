@@ -1,4 +1,4 @@
-import { HomeIcon, PenIcon, PlusCircle, Sparkle, User2 } from "lucide-react"
+import { Contact, HomeIcon, PenIcon, PlusCircle, Sparkle } from "lucide-react"
 import { ReactElement } from "react"
 import { ModeToggle } from "./mode-toggle"
 import { NavLink } from "react-router-dom"
@@ -15,24 +15,24 @@ const Header = () => {
             link: '/'
         },
         {
-            logo: <User2 size={18} />,
-            link: '/about'
-        },
-        {
             logo: <PenIcon size={18} />,
             link: '/skills'
         },
         {
             logo: <Sparkle size={18} />,
             link: '/projects'
+        },
+        {
+            logo: <Contact size={18} />,
+            link: '/contact'
         }
     ]
   return (
-    <div className="flex gap-2 items-center justify-between px-4 py-2 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md mb-4 shadow-sm">
-        <div className="flex gap-2 items-center justify-center">
+    <div className="flex gap-2 items-center justify-between px-4 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md mb-4 shadow-sm">
+        <div className="flex gap-8 items-center justify-center">
             {menu.map((item,ind) => (
                 <div key={ind}>
-                    <NavLink to={item.link} className="dark:hover:bg-[#323232] hover:bg-[#f4f4f5] text-[#989898] transition-all p-2 rounded-full cursor-pointer">{item.logo}</NavLink>
+                    <NavLink to={item.link} className="text-[#989898] transition-all px-2 rounded-full cursor-pointer">{item.logo}</NavLink>
                 </div>
             ))}
         </div>
