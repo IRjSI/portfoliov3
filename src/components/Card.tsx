@@ -6,7 +6,7 @@ const Card = ({ title, status, heading, description, btn1, img }: any) => {
     <div className="p-6 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md shadow-sm">
       <div className="flex flex-wrap justify-between items-center mb-6">
         <p className="text-[#a1a1a1] font-medium">● {title}</p>
-        <p className="text-green-500 bg-green-500/20 px-2 py-1 rounded-lg text-sm mt-2 sm:mt-0">• {status}</p>
+        <p className="text-green-500 bg-green-500/20 px-2 py-1 rounded-sm text-sm mt-2 sm:mt-0">• {status}</p>
       </div>
 
       <div className="flex flex-col-reverse md:grid md:grid-cols-[2fr_1fr] gap-6 items-center">

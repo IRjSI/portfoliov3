@@ -9,7 +9,7 @@ import Contact from "./components/Contact"
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="px-4 py-6">
+      <div className="px-4 py-6 font-satoshi">
         <div className="max-w-[600px] mx-auto">
           <Header />
           <Routes>

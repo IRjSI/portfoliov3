@@ -11,7 +11,7 @@ const Contact = () => {
       >
         <div className="flex justify-between items-center mb-8">
           <p className="text-[#a1a1a1] font-medium">● Contact</p>
-          <p className="text-green-500 bg-green-500/20 px-2 rounded-lg">• Online</p>
+          <p className="text-green-500 bg-green-500/20 px-2 rounded-sm">• Online</p>
         </div>
   
         <form className="space-y-4">

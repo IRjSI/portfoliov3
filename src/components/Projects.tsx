@@ -11,7 +11,7 @@ const Projects = () => {
     >
       <div className="flex justify-between items-center mb-8">
         <p className="text-[#a1a1a1] font-medium">● Projects</p>
-        <p className="text-green-500 bg-green-500/20 px-2 rounded-lg">• live</p>
+        <p className="text-green-500 bg-green-500/20 px-2 rounded-sm">• live</p>
       </div>
       <ProjectCard link="https://rjsv3.vercel.app" img="/Screenshot 2025-04-23 161938.png" name="Portfolio v3" description="A modern and sleek Portfolio website" />
       <ProjectCard link="https://note-cove.vercel.app" img="/Screenshot 2025-04-19 111923.png" name="Note-Cove" description="A note taking app with markdown support" />
