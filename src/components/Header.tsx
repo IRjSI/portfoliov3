@@ -2,6 +2,7 @@ import { Contact, HomeIcon, PenIcon, PlusCircle, Sparkle } from "lucide-react"
 import { ReactElement } from "react"
 import { ModeToggle } from "./mode-toggle"
 import { Link, NavLink } from "react-router-dom"
+import { motion } from "framer-motion"
 
 interface menuInt { 
     name: string,
@@ -33,7 +34,12 @@ const Header = () => {
         }
     ]
   return (
-    <div className="flex gap-2 items-center justify-between px-4 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md mb-4 shadow-sm">
+    <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }} 
+        className="flex gap-2 items-center justify-between px-4 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md mb-4 shadow-sm"
+    >
         <div className="flex sm:gap-8 gap-4 items-center justify-center">
             {menu.map((item,ind) => (
                 <div key={ind} title={item.name}>
@@ -45,7 +51,7 @@ const Header = () => {
             <ModeToggle />
             <Link to={'/contact'} className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><PlusCircle size={12} /> Hire me</Link>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
