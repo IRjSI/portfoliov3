@@ -1,10 +1,11 @@
 import { HomeIcon, PenIcon, PlusCircle, Sparkle, User2 } from "lucide-react"
 import { ReactElement } from "react"
 import { ModeToggle } from "./mode-toggle"
+import { NavLink } from "react-router-dom"
 
 interface menuInt { 
     logo: ReactElement,
-    link: String
+    link: string
 }
 
 const Header = () => {
@@ -31,9 +32,7 @@ const Header = () => {
         <div className="flex gap-2 items-center justify-center">
             {menu.map((item,ind) => (
                 <div key={ind}>
-                    <ul>
-                        <li className="dark:hover:bg-[#323232] hover:bg-[#f4f4f5] text-[#989898] transition-all p-2 rounded-full cursor-pointer">{item.logo}</li>
-                    </ul>
+                    <NavLink to={item.link} className="dark:hover:bg-[#323232] hover:bg-[#f4f4f5] text-[#989898] transition-all p-2 rounded-full cursor-pointer">{item.logo}</NavLink>
                 </div>
             ))}
         </div>
