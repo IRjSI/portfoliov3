@@ -48,7 +48,7 @@ const Card = ({ title, status, heading, description, btn1, img }: any) => {
         <div>
           <img
             src={img}
-            className="rounded-full w-32 h-32 md:w-36 md:h-36 object-cover border-2 mx-auto"
+            className="rounded-full w-32 h-32 md:w-36 md:h-36 object-cover border-2 mx-auto hover:scale-105 hover:shadow-lg transition-all duration-500"
             alt="Profile"
           />
         </div>
