@@ -36,7 +36,7 @@ const Card = ({ title, status, heading, description, btn1, img }: any) => {
               <GithubIcon size={18} />
             </a>
             <a
-              href="/resume.pdf"
+              href="/resume(latest).pdf"
               download
               className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-3 py-2 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"
             >
