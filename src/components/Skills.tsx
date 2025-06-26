@@ -2,14 +2,20 @@ import { motion } from "framer-motion"
 
 const Skills = () => {
   const skills = [
-      { name: "JavaScript", icon: "https://img.icons8.com/ios7/512/FFFFFF/javascript.png" },
-      { name: "Express", icon: "https://img.icons8.com/ios7/512/FFFFFF/javascript.png" },
-      { name: "React", icon: "https://img.icons8.com/ios_filled/512/FFFFFF/react-native.png" },
-      { name: "Tailwind CSS", icon: "https://img.icons8.com/m_rounded/512/FFFFFF/tailwind_css.png" },
-      { name: "Node.js", icon: "https://img.icons8.com/win10/600/FFFFFF/node-js.png" },
-      { name: "MongoDB", icon: "https://companieslogo.com/img/orig/MDB.D-9b200438.png?t=1720244492" },
-      { name: "Git", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Git-icon-white.svg/1200px-Git-icon-white.svg.png" },
-      { name: "GitHub", icon: "https://www.svgrepo.com/show/452211/github.svg" },
+    { name: "MongoDB", icon: "https://companieslogo.com/img/orig/MDB.D-9b200438.png?t=1720244492" },
+    { name: "Express", icon: "https://img.icons8.com/ios7/512/FFFFFF/javascript.png" },
+    { name: "React", icon: "https://img.icons8.com/ios_filled/512/FFFFFF/react-native.png" },
+    { name: "Node.js", icon: "https://img.icons8.com/win10/600/FFFFFF/node-js.png" },
+    { name: "JavaScript", icon: "https://img.icons8.com/ios7/512/FFFFFF/javascript.png" },
+    { name: "Tailwind CSS", icon: "https://img.icons8.com/m_rounded/512/FFFFFF/tailwind_css.png" },
+    { name: "Git", icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Git-icon-white.svg/1200px-Git-icon-white.svg.png" },
+    { name: "GitHub", icon: "https://www.svgrepo.com/show/452211/github.svg" },
+    { name: "NextJS", icon: "https://img.icons8.com/fluent-systems-filled/200/FFFFFF/nextjs.png" },
+    { name: "Postman", icon: "/postman.svg" },
+    { name: "Appwrite", icon: "https://appwrite.io/assets/logomark/logo.png" },
+    { name: "Vercel", icon: "/vercel.svg" },
+    { name: "Render", icon: "https://us1.discourse-cdn.com/flex016/uploads/render/original/2X/1/11352202c8503f736bea5efb59684f678d7c860c.svg" },
+    { name: "Prisma", icon: "https://cdn.creazilla.com/icons/3256965/file-type-prisma-icon-size_512.png" },
     ];
 
   return (

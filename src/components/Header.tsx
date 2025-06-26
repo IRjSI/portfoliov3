@@ -33,7 +33,9 @@ const Header = () => {
             link: '/contact'
         }
     ]
+
   return (
+    <div>
     <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -43,7 +45,16 @@ const Header = () => {
         <div className="flex sm:gap-8 gap-4 items-center justify-center">
             {menu.map((item,ind) => (
                 <div key={ind} title={item.name}>
-                    <NavLink to={item.link} className="text-[#989898] transition-all px-2 rounded-full cursor-pointer">{item.logo}</NavLink>
+                    <NavLink 
+                        style={({ isActive }) => ({
+                            color:
+                            isActive ? "#00a63e" : "#989898"
+                        })}
+                        to={item.link}
+                        className={`text-[#989898] transition-all px-2 rounded-full cursor-pointer`}
+                        >
+                        {item.logo}
+                    </NavLink>
                 </div>
             ))}
         </div>
@@ -52,6 +63,7 @@ const Header = () => {
             <Link to={'/contact'} className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><PlusCircle size={12} /> Hire me</Link>
         </div>
     </motion.div>
+    </div>
   )
 }
 
