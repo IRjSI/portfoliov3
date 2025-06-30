@@ -62,6 +62,7 @@ const Header = () => {
             <ModeToggle />
             <Link to={'/contact'} className="dark:bg-[#2b2b2b] border border-[#e4e4e7] dark:border-0 hover:bg-[#f4f4f5] px-2 py-1 rounded-sm font-light flex gap-2 items-center cursor-pointer dark:hover:bg-[#323232]"><PlusCircle size={12} /> Hire me</Link>
         </div>
+        
     </motion.div>
     </div>
   )

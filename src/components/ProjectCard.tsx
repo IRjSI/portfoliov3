@@ -6,10 +6,10 @@ const ProjectCard = ({ name, description, img, link, stacks }: { name: string, d
 
       <a href={link} target="_blank" className="absolute inset-0 backdrop-blur-xs flex flex-col justify-between px-4 py-4 group-hover:opacity-0 opacity-100 transition-opacity duration-700">
 
-        <div className="flex gap-4 flex-wrap">
+        <div className="flex gap-4 flex-wrap bg-black/80 sm:bg-transparent p-2 rounded-xl">
           {stacks.map((stack: any, index: any) => (
             <div key={index} className="flex items-center gap-1">
-              <img src={stack.logo} alt="" className="w-8 h-8 object-contain dark:invert-0 invert" />
+              <img src={stack.logo} alt="" className="w-6 h-6 object-contain" />
               <p className="text-white text-sm text-center">{stack.stack}</p>
             </div>
           ))}
