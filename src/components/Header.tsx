@@ -40,7 +40,7 @@ const Header = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }} 
-        className="flex gap-2 items-center justify-between px-4 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md mb-4 shadow-sm"
+        className="flex gap-2 items-center justify-between px-4 dark:bg-[#212121] border dark:border-[#636363] rounded-md mb-4 shadow-sm"
     >
         <div className="flex sm:gap-8 gap-4 items-center justify-center">
             {menu.map((item,ind) => (

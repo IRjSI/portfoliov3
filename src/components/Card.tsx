@@ -2,8 +2,10 @@ import { GithubIcon, PlusCircle, TwitterIcon } from "lucide-react"
 import { Link } from "react-router-dom"
 
 const Card = ({ title, status, heading, description, btn1, img }: any) => {
+  
+
   return (
-    <div className="p-6 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md shadow-sm">
+    <div className="p-6 dark:bg-[#212121] border border-t-2 dark:border-[#484848] dark:border-t-[#636363] rounded-md shadow-sm hover:bg-gradient-to-b hover:from-[#242424] hover:to-[#212121]">
       <div className="flex flex-wrap justify-between items-center mb-6">
         <p className="text-[#a1a1a1] font-medium">● {title}</p>
         <p className="text-green-500 bg-green-500/20 px-2 py-1 rounded-sm text-sm mt-2 sm:mt-0">• {status}</p>

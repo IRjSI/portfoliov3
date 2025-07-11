@@ -7,7 +7,7 @@ const Projects = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="p-6 dark:bg-[#212121] border dark:border-[#2c2c2c] rounded-md shadow-sm"
+      className="p-6 dark:bg-[#212121] border border-t-2 dark:border-[#484848] dark:border-t-[#636363] rounded-md shadow-sm"
     >
       <div className="flex justify-between items-center mb-8">
         <p className="text-[#a1a1a1] font-medium">● Projects</p>
